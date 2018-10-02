@@ -20,8 +20,8 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="displaym.php">Monitors</a>
                   <a class="dropdown-item" href="displaycard.php">Graphic Cards</a>
-                  <a class="dropdown-item" href="#">RAM</a>
-                  <a class="dropdown-item" href="#">SSD</a>
+                  <a class="dropdown-item" href="displayr.php">RAM</a>
+                  <a class="dropdown-item" href="displays.php">SSD</a>
                 </div>
             </li>
             <li class="nav-item dropdown active">

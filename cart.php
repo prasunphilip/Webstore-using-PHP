@@ -60,6 +60,62 @@
 					}
 				}
 
+				if(isset($_GET['ID_R']))
+				{
+    				$ID = $_GET['ID_R'];
+					$result = mysqli_query($db, "SELECT name,Price FROM `ram` WHERE ID_R=$ID");
+					while ($row = mysqli_fetch_array($result)) 
+					{
+						$name = $row['name'];
+						$price = $row['Price'];
+					}
+
+					$item_array_ID = array_column($_SESSION["cart"], "item_name");
+					if (!in_array($name, $item_array_ID)) 
+					{
+						$count = count($_SESSION["cart"]);
+						$item_array = array(
+							'id' => $ID,
+							'item_name' => $name,
+							'item_price' => $price,
+						);
+						$_SESSION["cart"][$count] = $item_array;
+					}
+					else
+					{
+						echo '<script>alert("Item already added")</script>';
+						echo '<script>window.location="cart.php"</script>';
+					}
+				}
+
+				if(isset($_GET['ID_S']))
+				{
+    				$ID = $_GET['ID_S'];
+					$result = mysqli_query($db, "SELECT name,Price FROM `ssd` WHERE ID_S=$ID");
+					while ($row = mysqli_fetch_array($result)) 
+					{
+						$name = $row['name'];
+						$price = $row['Price'];
+					}
+
+					$item_array_ID = array_column($_SESSION["cart"], "item_name");
+					if (!in_array($name, $item_array_ID)) 
+					{
+						$count = count($_SESSION["cart"]);
+						$item_array = array(
+							'id' => $ID,
+							'item_name' => $name,
+							'item_price' => $price,
+						);
+						$_SESSION["cart"][$count] = $item_array;
+					}
+					else
+					{
+						echo '<script>alert("Item already added")</script>';
+						echo '<script>window.location="cart.php"</script>';
+					}
+				}
+
 				if(isset($_GET['action']))
 				{
 						if($_GET['action'] == "delete")

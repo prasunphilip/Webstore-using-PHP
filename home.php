@@ -43,10 +43,10 @@
 		</div>
 		<div class="col-sm-3">
 			<div class="card" style="width: 18rem;">
-	 	 		<img class="card-img-top" src="images/ssd1.jpg" alt="Card image cap">
+	 	 		<img class="card-img-top" src="images/ssd3.jpg" alt="Card image cap">
 		  		<div class="card-body">
-    			<h5 class="card-title">Adata XPG SX6000 128GB</h5>
-    			<p class="card-text">&#x20B9;3500</p>
+    			<h5 class="card-title">Samsung T5 2TB</h5>
+    			<p class="card-text">&#x20B9;54200</p>
    			    <a href="#" class="btn btn-primary">Specs</a>
    			    <a href="#" class="btn btn-primary">Add to Cart</a>
    		    	</div>
