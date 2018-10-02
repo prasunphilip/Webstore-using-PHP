@@ -4,6 +4,7 @@
 	$password_1 = "";
 	$password_2 = "";
 	$email = "";
+	$add = "";
 	$errors = array();
 	
 	$db = mysqli_connect('localhost','root','','project');
@@ -11,6 +12,7 @@
 	if(isset($_POST['Signup'])){
 		$username = $_POST['name'];
 		$email = $_POST['email'];
+		$add = $_POST['add'];
 		$password_1 = $_POST['password_1'];
 		$password_2 = $_POST['password_2'];
 
@@ -20,6 +22,10 @@
 
 		if(empty($email)){
 			array_push($errors, "Email is required");
+		}
+
+		if(empty($add)){
+			array_push($errors, "Address is required");
 		}
 
 		if(empty($password_1)){
@@ -32,8 +38,8 @@
 
 		if(count($errors) == 0){
 			$password = md5($password_1);
-			$sql = "INSERT INTO user (username, email, password)
-						VALUES ('$username','$email','$password')";
+			$sql = "INSERT INTO user (username, email, password, address)
+						VALUES ('$username','$email','$password', '$add')";
 			mysqli_query($db, $sql);
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You are now logged in";
