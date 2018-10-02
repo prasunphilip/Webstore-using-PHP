@@ -56,6 +56,11 @@
 <div class="col-sm-3">
 			<div class="card" style="width: 18rem;display: inline-flex;">
 		  		<div class="card-body" >
+		  			<?php if($name == "ASUS ROG Strix Gaming GeForce RTX 2080 OC"):?>
+              <img src="images/rtx2080.jpg" width="70%">
+              <?php else:?>
+                <img src="images/rtx 2080Ti.jpg" width="70%">
+            <?php endif ?>
 						<h5 class="card-title"><?php echo $name; ?></h5>
 				    	<p class="card-text">&#x20B9;<?php echo $price;?></p>	
 				    	<form action="displaycard.php?action=add&ID=<?php echo $ID?>" method="POST">	

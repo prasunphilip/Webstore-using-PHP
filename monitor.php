@@ -62,7 +62,11 @@ $img;
 <div class = "container mt-xl-4">
     <div class = "row pb-xl-4">
         <div class = "col-xl-6">
-              <img src = "ASUS ROG SWIFT PG279Q.jpg" width = "70%">
+              <?php if($name == "ASUS ROG SWIFT PG279Q"):?>
+              <img src="images/ASUS ROG SWIFT PG279Q.jpg" width="70%">
+              <?php else:?>
+                <img src="images/Asus VG248QE.jpg" width="70%">
+            <?php endif ?>
         </div>
 
         <div class = "col-lg-6">
@@ -84,7 +88,9 @@ $img;
                 </div>
 
                 <div class = "col-md-4">
-                   <button type = "button" class = "btn btn-outline-primary">Add To Cart</button>
+                   <form action="displaym.php?action=add&ID=<?php echo $ID?>" method="POST">
+                <input type="submit" name="cart" value="Add to Cart" class="btn btn-primary">
+            </form>
                 </div>
              </div>
           </div>

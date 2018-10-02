@@ -1,7 +1,5 @@
 <?php include ('register.php'); ?>
 <?php include ('navbar.php'); ?>
-<br>
-<h1><center>CART</center></h1>
 
 <?php
 			if(isset($_SESSION["cart"]))
@@ -101,7 +99,14 @@
 			<th width="15%">Total</th>
 			<th width="5%">Action</th>
 		</tr>
-		<?php
+		<?php 
+
+		if(empty($_SESSION["cart"]))
+               echo "<h1><center>EMPTY CART</center></h1>";
+           else
+           	echo "<h1><center>CART</center></h1>";
+
+        echo "<br>";
 
 		if (!empty($_SESSION["cart"])) {
 			$total = 0;
@@ -131,5 +136,12 @@
 	</table>
 	
 </div>
+
+
+<?php if(isset($_SESSION["cart"])) :?>
+	<button type="button" class="btn btn-success" href="checkout.php">Checkout</button>
+<?php else: ?>
+	<button type="button" class="btn btn-success" href="checkout.php">Checkout<?php echo '<scrpit>alert("Cart Empty")</scrpit>' ?></button>
+<?php endif ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">

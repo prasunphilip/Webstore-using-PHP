@@ -10,7 +10,7 @@
 	<div class="card-deck">
 		<div class="col-sm-3">
 			<div class="card" style="width: 18rem;">
-	 	 		<img class="card-img-top" src="ASUS ROG SWIFT PG279Q.jpg" alt="Card image cap">
+	 	 		<img class="card-img-top" src="images/ASUS ROG SWIFT PG279Q.jpg" alt="Card image cap">
 		  		<div class="card-body">
     			<h5 class="card-title">ASUS ROG SWIFT PG279Q</h5>
     			<p class="card-text">&#x20B9;78000.00</p>
@@ -32,10 +32,10 @@
 		</div>
 		<div class="col-sm-3">
 			<div class="card" style="width: 18rem;">
-	 	 		<img class="card-img-top" src="ram1.jpg" alt="Card image cap">
+	 	 		<img class="card-img-top" src="images/ram2.jpg" alt="Card image cap">
 		  		<div class="card-body">
-    			<h5 class="card-title">Adata 4GB DDR4 AD4S2400J4G17-B</h5>
-    			<p class="card-text">&#x20B9;3050</p>
+    			<h5 class="card-title">G.Skill 32GB DDR4 F4-3600C17D-32GTZR</h5>
+    			<p class="card-text">&#x20B9;40500.00</p>
    			    <a href="#" class="btn btn-primary">Specs</a>
    			    <a href="#" class="btn btn-primary">Add to Cart</a>
    		    	</div>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="col-sm-3">
 			<div class="card" style="width: 18rem;">
-	 	 		<img class="card-img-top" src="ssd1.jpg" alt="Card image cap">
+	 	 		<img class="card-img-top" src="images/ssd1.jpg" alt="Card image cap">
 		  		<div class="card-body">
     			<h5 class="card-title">Adata XPG SX6000 128GB</h5>
     			<p class="card-text">&#x20B9;3500</p>
